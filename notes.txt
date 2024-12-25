@@ -1,0 +1,25 @@
+Construtores no dart:
+
+
+Produto (name, price) {
+    this.name = name
+    this.price = price
+}
+
+
+ou um construtor encadeado: 
+
+Produto (this.name, this.price) {
+
+}
+
+
+Parâmetros nomeados
+
+
+Product({this.name, this.price})
+
+assim, eu posso alterar a ordem no construtor caso eu queira
+
+var product = Product(price: 10, name: "Some name here")
+
